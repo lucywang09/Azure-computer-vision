@@ -48,12 +48,16 @@ async function analyzeImage() {
     const tagsContainer = document.getElementById("tags");
     tagsContainer.innerHTML = "";
 
+    if (data.tags && Array.isArray(data.tags)) {
     data.tags.forEach(tag => {
       const span = document.createElement("span");
       span.className = "tag";
       span.innerText = tag;
       tagsContainer.appendChild(span);
     });
+  }
+
+    
 
     loader.classList.add("hidden");
     result.classList.remove("hidden");
