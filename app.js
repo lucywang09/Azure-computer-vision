@@ -1,4 +1,4 @@
-const API_URL = "https://photo-inspector-api-a0gqfdgecre5ahcg.centralus-01.azurewebsites.net/api/AnalyzeImage";
+const API_URL = "https://photo-inspector-api-a0gqfdgecre5ahcg.centralindia-01.azurewebsites.net/api/AnalyzeImage";
 
 let base64Image = "";
 
