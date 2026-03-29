@@ -38,7 +38,9 @@ async function analyzeImage() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(base64Image)
+      body: JSON.stringify({
+        image: base64Image
+      })
     });
 
     const data = await response.json();
