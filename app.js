@@ -67,5 +67,4 @@ async function analyzeImage() {
     alert("Error analyzing image");
     console.error(error);
   }
-}
- 
+} 
